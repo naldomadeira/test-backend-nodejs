@@ -16,6 +16,7 @@ connectDB();
 
 // load models
 require('./src/models/Product');
+require('./src/models/Category');
 
 // load routers
 app.use('/api', require('./src/routes/router'));
