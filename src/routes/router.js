@@ -4,7 +4,9 @@ const routes = express.Router();
 const ProductController = require("../controllers/ProductController");
 
 //API
-routes.get('/products', ProductController.index);
+routes.get('/products', ProductController.find);
+
+routes.get('/products/:id', ProductController.show);
 
 routes.post('/products', ProductController.store);
 
